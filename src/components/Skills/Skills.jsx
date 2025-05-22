@@ -159,7 +159,7 @@ const Skills = () => {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [skillsData]);
 
   const SkillBar = ({ skill, categoryIndex, skillIndex }) => {
     const skillKey = `${categoryIndex}-${skillIndex}`;
