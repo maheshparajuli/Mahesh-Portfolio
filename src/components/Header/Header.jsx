@@ -1,69 +1,75 @@
-import { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navItems = [
-    { name: 'Home', id: 'home' },
-    { name: 'About', id: 'about' },
-    { name: 'Projects', id: 'projects' },
-    { name: 'Skills', id: 'skills' },
-    { name: 'Contact', id: 'contact' },
-  ];
-
-  const handleNavClick = (id) => {
-    const element = document.getElementById(id);
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setMenuOpen(false);
+    setIsMenuOpen(false);
   };
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className="header">
       <div className="container">
-        <div className="logo" onClick={() => handleNavClick('home')}>
-          <span className="logo-text">Portfolio</span>
-          <span className="logo-dot">.</span>
-        </div>
-
-        <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-          <ul>
-            {navItems.map((item) => (
-              <li key={item.id}>
-                <button
-                  className="nav-link"
-                  onClick={() => handleNavClick(item.id)}
+        <div className="nav-wrapper">
+          <div className="logo">
+            <h2>Your Name</h2>
+          </div>
+          
+          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+            <ul className="nav-list">
+              <li className="nav-item">
+                <button 
+                  className="nav-link" 
+                  onClick={() => scrollToSection('about')}
                 >
-                  {item.name}
+                  About
                 </button>
               </li>
-            ))}
-          </ul>
-        </nav>
+              <li className="nav-item">
+                <button 
+                  className="nav-link" 
+                  onClick={() => scrollToSection('skills')}
+                >
+                  Skills
+                </button>
+              </li>
+              <li className="nav-item">
+                <button 
+                  className="nav-link" 
+                  onClick={() => scrollToSection('projects')}
+                >
+                  Projects
+                </button>
+              </li>
+              <li className="nav-item">
+                <button 
+                  className="nav-link" 
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </nav>
 
-        <div
-          className={`hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+          <button 
+            className="mobile-menu-toggle"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>

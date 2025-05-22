@@ -1,64 +1,56 @@
-import { useEffect } from 'react';
+import React from 'react';
 import './About.css';
-import myPhoto from '../../assets/viber_image_2025-05-22_15-44-43-982.jpg';
-
 
 const About = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll('.about-content, .about-image');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => elements.forEach((el) => observer.unobserve(el));
-  }, []);
-
   return (
     <section id="about" className="about-section">
-      <div className="about-container">
+      <div className="container">
         <div className="about-content">
-          <h2 className="section-title">
-            <span className="title-number">01.</span> About Me
-          </h2>
-          <p className="about-text">
-            I'm a passionate frontend developer with expertise in creating
-            beautiful, responsive, and user-friendly web applications. With a
-            strong foundation in React, JavaScript, and modern CSS, I bring
-            designs to life with attention to detail and performance.
-          </p>
-          <p className="about-text">
-            My journey in web development started several years ago, and since
-            then I've worked on various projects ranging from small business
-            websites to complex web applications.
-          </p>
-          <div className="skills-list">
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>HTML5</li>
-            </ul>
-            <ul>
-              <li>CSS3/Sass</li>
-              <li>Git</li>
-              <li>Responsive Design</li>
-            </ul>
+          <div className="about-text">
+            <h2 className="section-title">About Me</h2>
+            <h3 className="about-subtitle">Full Stack Developer</h3>
+            <p className="about-description">
+              I'm a passionate full-stack developer with experience in creating 
+              modern web applications. I love turning ideas into reality through 
+              clean, efficient code and intuitive user experiences.
+            </p>
+            <p className="about-description">
+              With expertise in both frontend and backend technologies, I enjoy 
+              working on challenging projects that push the boundaries of what's 
+              possible on the web. I'm always eager to learn new technologies 
+              and improve my skills.
+            </p>
+            
+            <div className="about-stats">
+              <div className="stat-item">
+                <h4>50+</h4>
+                <p>Projects Completed</p>
+              </div>
+              <div className="stat-item">
+                <h4>3+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div className="stat-item">
+                <h4>20+</h4>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+
+            <div className="about-buttons">
+              <a href="#contact" className="btn btn-primary">Get In Touch</a>
+              <a href="/resume.pdf" className="btn btn-secondary" download>
+                Download CV
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="about-image">
-          <div className="image-wrapper">
-            <div className="image-overlay"></div>
-            <div className="image-placeholder">
-              <img src={myPhoto} alt="My Portrait" className="profile-photo" />
-              <p className="my-name">Mahesh Parajuli</p>
+          
+          <div className="about-image">
+            <div className="image-wrapper">
+              <img 
+                src="/api/placeholder/400/500" 
+                alt="Profile" 
+                className="profile-image"
+              />
             </div>
           </div>
         </div>
