@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import profileImage from '../../assets/viber_image_2025-05-22_15-44-43-982.jpg';
 
 const About = () => {
   return (
@@ -47,7 +48,7 @@ const About = () => {
           <div className="about-image">
             <div className="image-wrapper">
               <img 
-                src="/api/placeholder/400/500" 
+                src={profileImage} 
                 alt="Profile" 
                 className="profile-image"
               />

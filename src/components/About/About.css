@@ -74,10 +74,10 @@
   justify-content: center;
 }
 
-.image-wrapper {
+/* .image-wrapper {
   position: relative;
   max-width: 400px;
-}
+} */
 
 .profile-image {
   width: 100%;
@@ -137,4 +137,35 @@
   .image-wrapper {
     max-width: 300px;
   }
+}
+
+/* Initial animation when image loads */
+.image-wrapper {
+  animation: fadeInUp 1.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in from bottom */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional round corners and smooth image */
+.profile-image {
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
