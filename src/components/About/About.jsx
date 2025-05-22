@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import './About.css';
+// import myPhoto from './assets/viber_image_2025-05-22_15-44-43-982.jpg'; // adjust path if needed
+import myPhoto from "../../assets/viber_image_2025-05-22_15-44-43-982.jpg";
+
 
 const About = () => {
   useEffect(() => {
@@ -54,7 +57,10 @@ const About = () => {
         <div className="about-image">
           <div className="image-wrapper">
             <div className="image-overlay"></div>
-            <div className="image-placeholder"></div>
+            <div className="image-placeholder">
+              <img src={myPhoto} alt="My Profile" />
+
+            </div>
           </div>
         </div>
       </div>
