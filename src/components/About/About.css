@@ -87,6 +87,21 @@
   border-radius: 10px;
   overflow: hidden;
 }
+.profile-photo {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.my-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
 
 /* .image-placeholder {
   width: 100%;
