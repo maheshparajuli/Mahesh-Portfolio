@@ -36,7 +36,7 @@ const About = () => {
                 <p>Happy Clients</p>
               </div>
             </div>
-
+            
             <div className="about-buttons">
               <a href="#contact" className="btn btn-primary">Get In Touch</a>
               <a href="/resume.pdf" className="btn btn-secondary" download>
