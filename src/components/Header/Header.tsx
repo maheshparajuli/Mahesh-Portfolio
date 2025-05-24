@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import './Header.css';
+// import profileImage from './src/assets/viber_image_2025-05-22_15-44-43-982.jpg';
+// import profileImage from './assets/viber_image_2025-05-22_15-44-43-982.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +29,7 @@ const Header = () => {
         <nav className="nav-container">
           <div className="nav-content">
             <div className="logo">
-              AI Portfolio
+              MAHESH PARAJULI
             </div>
             
             <div className="nav-desktop">
@@ -88,9 +90,20 @@ const Header = () => {
         </div>
         
         <div className="hero-content">
+          <div className="hero-photo">
+            <div className="hero-photo-container">
+              <img 
+                // src= 
+                alt="Mahesh Parajuli" 
+                className="hero-profile-photo"
+              />
+              <div className="hero-photo-overlay"></div>
+            </div>
+          </div>
+          
           <div className="hero-text">
             <h1 className="hero-title">
-              AI & ML Engineer
+              AI/ML Enthusiast
             </h1>
             <p className="hero-subtitle">
               Transforming data into intelligent solutions through machine learning and artificial intelligence
