@@ -1,26 +1,28 @@
 import React from 'react';
-import './App.css';
-import './index.css';
-import Header from './components/Header/Header';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
-import Contacts from './components/Contacts/Contacts';
-import Footer from './components/Footer/Footer';
+import Header from '../components/Header/Header';
+import About from '../components/About/About';
+import Projects from '../components/Projects/Projects';
+import Skills from '../components/Skills/Skills';
+import Contacts from '../components/Contacts/Contacts';
+import Footer from '../components/Footer/Footer';
+import './Index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <About />
-        <Skills />
-        <Projects />
-        <Contacts />
-      </main>
-      <Footer />
+    <div className="portfolio-container">
+      <div className="background-animation"></div>
+      <div className="content-wrapper">
+        <Header />
+        <main>
+          <About />
+          <Skills />
+          <Projects />
+          <Contacts />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
