@@ -204,7 +204,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="stats-grid">
+        {/* <div className="stats-grid">
           {[
             { number: "50+", label: "Projects Completed" },
             { number: "5+", label: "Years Experience" },
@@ -216,7 +216,7 @@ const Skills = () => {
               <div className="stat-label">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

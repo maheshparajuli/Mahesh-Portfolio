@@ -38,20 +38,20 @@ const Contacts = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      value: "maheshparajuli717@gmail.com",
+      // link: "mailto:your.email@example.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+977 9865495350",
+      // link: "tel:+15551234567"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "#"
+      value: "Kathmandu,Nepal",
+      // link: "#"
     }
   ];
 

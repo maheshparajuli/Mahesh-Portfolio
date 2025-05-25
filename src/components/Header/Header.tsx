@@ -119,11 +119,11 @@ const Header = () => {
           </div>
         </div>
         
-        <div className="scroll-indicator">
+        {/* <div className="scroll-indicator">
           <div className="scroll-mouse">
             <div className="scroll-wheel"></div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </section>
     </>
   );
