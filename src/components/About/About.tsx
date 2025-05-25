@@ -94,6 +94,7 @@
 import React from 'react';
 import { Brain, Code, Database, TrendingUp } from 'lucide-react';
 import './About.css';
+import ago from '../../assets/images/conference.jpg';
 
 const About = () => {
   const features = [
@@ -147,7 +148,7 @@ const About = () => {
           <div className="about-photo">
             <div className="photo-container">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" 
+                src={ago}
                 alt="Profile" 
                 className="profile-photo"
               />
