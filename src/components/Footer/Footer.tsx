@@ -69,23 +69,23 @@ const Footer = () => {
           <div className="footer-contact">
             <h4 className="footer-contact-title">Get In Touch</h4>
             <div className="footer-contact-info">
-              <p>San Francisco, CA</p>
-              <p>your.email@example.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Kathmandu,Nepal</p>
+              <p>maheshparajuli717@gmail.com</p>
+              <p>+977 9865495350</p>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p className="footer-copyright">
+            {/* <p className="footer-copyright">
               <span>© {currentYear} AI Portfolio. Made with</span>
               <Heart className="heart-icon" size={16} />
               <span>and lots of coffee</span>
-            </p>
-            <p className="footer-tech">
+            </p> */}
+            {/* <p className="footer-tech">
               Powered by React, TypeScript, and Custom CSS
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
