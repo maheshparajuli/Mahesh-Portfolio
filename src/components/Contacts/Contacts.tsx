@@ -1,10 +1,11 @@
-// import React, { useState } from 'react';
-// import { Mail, MapPin, Phone, Send, Github, Linkedin } from 'lucide-react';
 
+// import React, { useState } from 'react';
+// import { Mail, MapPin, Phone, Send } from 'lucide-react';
+// // import { useToast } from '@/hooks/use-toast';
 // import './Contacts.css';
 
 // const Contacts = () => {
-  
+//   // const { toast } = useToast();
 //   const [formData, setFormData] = useState({
 //     name: '',
 //     email: '',
@@ -55,24 +56,6 @@
 //     }
 //   ];
 
-//   const socialLinks = [
-//     {
-//       icon: Github,
-//       name: "GitHub",
-//       url: "https://github.com"
-//     },
-//     {
-//       icon: Linkedin,
-//       name: "LinkedIn",
-//       url: "https://linkedin.com"
-//     },
-//     {
-//       icon: Mail,
-//       name: "Email",
-//       url: "mailto:your.email@example.com"
-//     }
-//   ];
-
 //   return (
 //     <section id="contact" className="contact-section">
 //       <div className="contact-container">
@@ -105,22 +88,6 @@
 //                   </div>
 //                 </a>
 //               ))}
-//             </div>
-
-//             <div className="social-section">
-//               <h4 className="social-title">Follow Me</h4>
-//               <div className="social-links">
-//                 {socialLinks.map((social, index) => (
-//                   <a
-//                     key={index}
-//                     href={social.url}
-//                     className="social-link"
-//                     title={social.name}
-//                   >
-//                     <social.icon size={24} />
-//                   </a>
-//                 ))}
-//               </div>
 //             </div>
 //           </div>
 
@@ -289,74 +256,6 @@ const Contacts = () => {
                 </a>
               ))}
             </div>
-          </div>
-
-          <div className="contact-form-wrapper">
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  placeholder="Project Discussion"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  placeholder="Tell me about your project or idea..."
-                />
-              </div>
-
-              <button type="submit" disabled={isSubmitting} className="submit-btn">
-                {isSubmitting ? (
-                  <div className="loading-spinner"></div>
-                ) : (
-                  <>
-                    <Send size={20} />
-                    <span>Send Message</span>
-                  </>
-                )}
-              </button>
-            </form>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const Projects = () => {
       icon: Image,
       tech: ["Python", "YOLOv8n", "LORa module","GPS module","RaspberryPI"],
       github: "https://github.com",
-      demo: "https://demo.com",
+      // demo: "https://demo.com",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
       category: "Computer Vision"
     },
@@ -35,7 +35,7 @@ const Projects = () => {
       icon: MessageSquare,
       tech: ["Python", "hmmlearn",],
       github: "https://github.com",
-      demo: "https://demo.com",
+      // demo: "https://demo.com",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
       category: "NLP"
     },
@@ -46,7 +46,7 @@ const Projects = () => {
       icon: TrendingUp,
       tech: ["Python", "Plotly", "Scikit-learn", "Streamlit"],
       github: "https://github.com",
-      demo: "https://demo.com",
+      // demo: "https://demo.com",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
       category: "Data Science"
     }
