@@ -205,3 +205,153 @@
     gap: 48px;
   }
 } */ 
+
+.about-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: bold;
+  margin-bottom: 24px;
+  background: linear-gradient(45deg, #9333ea, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section-subtitle {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #d1d5db;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.photo-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(147, 51, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.photo-container:hover {
+  border-color: rgba(147, 51, 234, 0.6);
+  transform: scale(1.05);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-container:hover .profile-photo {
+  transform: scale(1.1);
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(147, 51, 234, 0.2), rgba(6, 182, 212, 0.2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-container:hover .photo-overlay {
+  opacity: 1;
+}
+
+.about-text {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.about-text-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.about-paragraph {
+  color: #d1d5db;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.about-paragraph:first-of-type {
+  animation-delay: 0.5s;
+}
+
+.about-paragraph:last-of-type {
+  animation-delay: 0.6s;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 300px 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  
+  .about-photo {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-content {
+    grid-template-columns: 300px 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+}
