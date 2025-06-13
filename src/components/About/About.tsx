@@ -99,9 +99,8 @@ const About = () => {
           <div className="about-text">
             <h3 className="about-text-title">My Journey</h3>
             <p className="about-paragraph">
-              With a strong foundation in mathematics and computer science, I've dedicated my career to 
-              understanding and implementing cutting-edge AI technologies. My experience spans across 
-              various domains including computer vision, natural language processing, and predictive analytics.
+              I currently study Bsc. Computational mathematics at Kathmandu University and I am in my fourth year of undergraduate. With a strong foundation in mathematics and computer science, I've been dedicating my time to 
+              understanding and implementing cutting-edge AI technologies.
             </p>
             <p className="about-paragraph">
               I believe in the power of data-driven decision making and am constantly exploring new 

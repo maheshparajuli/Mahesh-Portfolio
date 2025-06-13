@@ -6,25 +6,13 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
-    // {
-    //   id: 1,
-    //   title: "AI-Powered Recommendation System",
-    //   description: "Built a sophisticated recommendation engine using collaborative filtering and deep learning to provide personalized suggestions with 95% accuracy.",
-    //   icon: Brain,
-    //   tech: ["Python", "TensorFlow", "React", "AWS"],
-    //   github: "https://github.com",
-    //   demo: "https://demo.com",
-    //   image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-    //   category: "Machine Learning"
-    // },
     {
       id: 2,
       title: "Edge-Based Forest Fire Detection and Alerting System Using Machine Learning and YOLOv8 on Raspberry Pi",
       description: "Developed a real-time object detection and tracking system for industrial automation using YOLO and OpenCV with 98% detection accuracy.",
       icon: Image,
       tech: ["Python", "YOLOv8n", "LORa module","GPS module","RaspberryPI"],
-      github: "https://github.com",
-      // demo: "https://demo.com",
+      // github: "https://github.com",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
       category: "Computer Vision"
     },
@@ -33,9 +21,8 @@ const Projects = () => {
       title: "Prediction of Hereditary Disease Risk Using Hidden Markov Model in Machine Learning",
       description: "Trained hidden markov model using synthetic data of DNA sequences and predicted hereditary disease based on the cpg islands and GC content.It was hard to get the data due to medical restrictions.",
       icon: MessageSquare,
-      tech: ["Python", "hmmlearn",],
-      github: "https://github.com",
-      // demo: "https://demo.com",
+      tech: ["Python", "hmmlearn"],
+      // github: "https://github.com",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
       category: "NLP"
     },
@@ -46,7 +33,6 @@ const Projects = () => {
       icon: TrendingUp,
       tech: ["Python", "Plotly", "Scikit-learn", "Streamlit"],
       github: "https://github.com",
-      // demo: "https://demo.com",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
       category: "Data Science"
     }
@@ -93,13 +79,11 @@ const Projects = () => {
                 </div>
 
                 <div className="project-links">
-                  <a href={project.github} className="project-link">
+                 
+                  {/* <a href={project.github} className="project-link"> */}
+                     <a  className="project-link">
                     <Github size={16} />
                     <span>Code</span>
-                  </a>
-                  <a href={project.demo} className="project-link project-link-primary">
-                    <ExternalLink size={16} />
-                    <span>Demo</span>
                   </a>
                 </div>
               </div>

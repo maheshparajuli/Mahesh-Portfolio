@@ -43,13 +43,13 @@ const Header = () => {
                 </a>
               ))}
               <div className="social-links">
-                <a href="https://github.com" className="social-link">
+                <a href="https://github.com/maheshparajuli" className="social-link">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" className="social-link">
+                <a href="https://www.linkedin.com/in/mahesh-parajuli-965a65267/" className="social-link">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:your.email@example.com" className="social-link">
+               <a href="mailto:maheshparajuli717@gmail.com" className="social-link">
                   <Mail size={20} />
                 </a>
               </div>
