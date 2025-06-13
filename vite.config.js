@@ -20,5 +20,5 @@ export default defineConfig({
     host: true, // or '0.0.0.0' to expose to the network
     port: 5173, // optional, default is 5173
   },
-  base:"/mahesh-portfolio",
+  base:"/Mahesh-Portfolio",
 });
