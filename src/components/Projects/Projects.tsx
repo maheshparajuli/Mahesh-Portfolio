@@ -24,7 +24,7 @@ const Projects = () => {
       tech: ["Python", "hmmlearn"],
       // github: "https://github.com",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      category: "NLP"
+      category: "Data Analysis"
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Projects = () => {
       tech: ["Python", "Plotly", "Scikit-learn", "Streamlit"],
       github: "https://github.com",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      category: "Data Science"
+      // category: "Data Science"
     }
   ];
 
