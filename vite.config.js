@@ -16,9 +16,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    host: true, // or '0.0.0.0' to expose to the network
-    port: 5173, // optional, default is 5173
-  },
+  
   base:"/Mahesh-Portfolio",
 });
